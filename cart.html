@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <script id="replace_with_navbar" src="js/nav.js"></script>
+
+    <div id="emptyCart" class="container text-center d-none">
+        <br>
+        <br>
+        <br>
+        <h2 class="fw-light">Your cart is currently empty</h2>
+        <a href="index.html"><button class="btn btn-primary"><i class="bi bi-house-door"></i> Return to homepage</button></a>
+    </div>
+
+    <div id="tableContainer" class="container">
+        <div>
+            <table class="table">
+                <caption class="text-end" id="caption">Total: </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+
+            <a href="checkout.html">
+                <button class="btn btn-primary float-end">Continue to checkout</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
